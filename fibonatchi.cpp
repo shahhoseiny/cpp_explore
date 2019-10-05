@@ -1,4 +1,11 @@
 
+/*
+ * Test how expensive naive Fibonatchi implementation can be compared to using std::tuple.
+ * By using std::pair for return value of Fibonatchi, then the algorithm doesn't need to recalculate 
+ * right wing fibo(n-2) and this makes complexity of O(n)
+ * Complexity of Naive Fibonatchi is O(2^n)
+ */
+
 #include <iostream>
 #include <tuple>
 #include <chrono>
